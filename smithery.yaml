@@ -1,0 +1,19 @@
+name: meok-ap2-mandate-mcp
+description: "> ## 🧱 Part of the MEOK A2A Substrate (£999/mo)"
+version: 1.0.0
+author: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/MEOK-AI-Labs/meok-ap2-mandate-mcp
+license: MIT
+categories:
+  - compliance
+  - ai
+  - governance
+
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+    - fastapi
+    - uvicorn
+    - mcp

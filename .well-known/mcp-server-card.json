@@ -1,0 +1,34 @@
+{
+  "name": "meok-ap2-mandate-mcp",
+  "title": "Meok Ap2 Mandate Mcp",
+  "description": "MEOK Google AP2 Mandate MCP \u2014 issue + verify + revoke signed user-side spend authorisations for agentic commerce. PSD2 SCA crosswalk + MiCA + 6AMLD overlays. By MEOK AI Labs.",
+  "version": "1.0.0",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "issue_mandate"
+    },
+    {
+      "name": "verify_mandate"
+    },
+    {
+      "name": "consume_mandate"
+    },
+    {
+      "name": "revoke_mandate"
+    },
+    {
+      "name": "list_mandate_scopes"
+    },
+    {
+      "name": "crosswalk_psd2"
+    },
+    {
+      "name": "sign_mandate_chain"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# meok-ap2-mandate-mcp
+
+> MEOK Google AP2 Mandate MCP — issue + verify + revoke signed user-side spend authorisations for agentic commerce. PSD2 SCA crosswalk + MiCA + 6AMLD overlays. By MEOK AI Labs.
+
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- issue_mandate
+- verify_mandate
+- consume_mandate
+- revoke_mandate
+- list_mandate_scopes
+- crosswalk_psd2
+- sign_mandate_chain
+
+## Install
+```
+pip install meok-ap2-mandate-mcp
+```
+
+## Links
+- PyPI: https://pypi.org/project/meok-ap2-mandate-mcp/
+- Docs: https://meok.ai
