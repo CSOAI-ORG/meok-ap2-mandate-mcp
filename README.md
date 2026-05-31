@@ -1,83 +1,78 @@
-# MEOK Google AP2 Mandate MCP
+# Meok Ap2 Mandate MCP
 
-> ## 🧱 Part of the MEOK A2A Substrate (£999/mo)
-> See [meok.ai/a2a](https://meok.ai/a2a).
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/meok_ap2_mandate_mcp/)
 
-# Google AP2 v0.2.0 — issue + verify + revoke signed spend authorisations
+> Google AP2 v0
 
-<!-- mcp-name: io.github.CSOAI-ORG/meok-ap2-mandate-mcp -->
+Google AP2 v0.2.0 Mandate MCP - signed user-side spend authorisation + PSD2 SCA crosswalk. MIT. By MEOK AI Labs.
 
-[![PyPI](https://img.shields.io/pypi/v/meok-ap2-mandate-mcp)](https://pypi.org/project/meok-ap2-mandate-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+---
 
-## What this bridges
+## 🚀 Quick Start
 
-Google **AP2 (Agent Payments Protocol) v0.2.0** — the 60-org coalition spec (Mar 2026) for agentic commerce. AP2 introduces the **Mandate**: a signed user-issued authorisation telling an agent how much it may spend, where, for how long, with what SCA method.
+```bash
+# Install via pip
+pip install meok_ap2_mandate_mcp
 
-AP2 mandates are the user-side counterpart to merchant-side **ACP** (Stripe ACP) and settlement-side **x402** (Coinbase). The full agentic-payment stack:
-
-```
-user → AP2 Mandate (this MCP)
-     → Stripe ACP / Google AP2 Intent (agent-commerce-protocol-mcp)
-     → x402 / card / SEPA (agent-x402-paywall-mcp)
-     → Settlement + signed receipt (agent-commerce-payments-mcp)
+# Or install via Smithery
+npx -y @smithery/cli@latest install meok-ap2-mandate-mcp --client claude
 ```
 
-This MCP also crosses-walks every mandate against **PSD2 Strong Customer Authentication** rules so EU operators get out-of-the-box regulatory compliance.
+## ✨ Features
 
-## Tools
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-| Tool | Purpose |
-|---|---|
-| `issue_mandate(user_did, agent_did, scope, cap_eur, window_hours, ...)` | Issue signed mandate |
-| `verify_mandate(mandate_id, attempted_spend_eur, merchant_id?, category?)` | Pre-spend authorisation check |
-| `consume_mandate(mandate_id, spend_eur)` | Deduct after successful payment |
-| `revoke_mandate(mandate_id, reason)` | Immediate user-side revoke |
-| `list_mandate_scopes()` | 7 AP2 scope categories + 5 SCA methods |
-| `crosswalk_psd2(mandate_id, sca_method)` | PSD2 SCA strong/weak/exemption check |
-| `sign_mandate_chain(mandate_id)` | HMAC-seal for audit chain |
+## 📖 Documentation
 
-## AP2 scope categories
+- [Full Documentation](https://docs.meok.ai/meok-ap2-mandate-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-`merchant_purchase` · `category_purchase` · `subscription_renewal` · `negotiation_only` · `search_only` · `data_request` · `agent_to_agent`
+## 🛡️ Compliance
 
-## PSD2 SCA methods
+This MCP server is built with **EU AI Act compliance** built-in:
 
-`passkey_webauthn` (FIDO2 strong) · `bank_app_push` (strong) · `totp_authenticator` (strong) · `sms_otp` (weak, fallback only) · `delegated_authority` (high-risk + audit)
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-## Sister MCPs
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-- `agent-commerce-protocol-mcp` — Stripe ACP + AP2 Intent + x402 bridge
-- `agent-x402-paywall-mcp` — Coinbase HTTP 402 settlement
-- `agent-commerce-payments-mcp` — PSD2 + MiCA payment rails
-- `agent-policy-enforcement-mcp` — IAM gate for verify_mandate calls
+## 🏢 Enterprise
 
-Full catalogue: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+Need custom development, SLA guarantees, or white-label deployment?
 
-## Pricing
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-| Option | Price |
-|---|---|
-| Self-host MIT | £0 |
-| Universal PAYG | £29/mo + £0.0002/call |
-| A2A Substrate | £999/mo |
-| Defence | £4,990/mo |
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-Buy: https://meok.ai/a2a
+## 🤝 Part of the MEOK Ecosystem
 
-## Wire it up — full stack
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-Pair this with the MEOK chain that turns one agentic purchase into ONE signed compliance event:
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-1. **meok-ap2-mandate-mcp** — user signs spend authorisation
-2. **agent-policy-enforcement-mcp** — agent's IAM gate
-3. **agent-commerce-protocol-mcp** — ACP intent + AP2 mandate-bound transaction
-4. **agent-x402-paywall-mcp** — on-chain settlement (or card via agent-commerce-payments-mcp)
-5. **agent-audit-logger-mcp** — hash-chained evidence
-6. **a2a-governance-bridge-mcp** — fold all attestations → 1 signed event
+## 📜 License
 
-See [meok.ai/mcp-stack](https://meok.ai/mcp-stack) for architecture and [meok.ai/mcp-stack/demo](https://meok.ai/mcp-stack/demo) for the live demo.
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 
-## Licence
+---
 
-MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House 16939677).
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
