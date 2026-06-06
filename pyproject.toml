@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "meok-ap2-mandate-mcp"
-version = "1.0.0"
+version = "1.0.1"
 description = "MEOK Google AP2 Mandate MCP — issue + verify + revoke signed user-side spend authorisations for agentic commerce. PSD2 SCA crosswalk + MiCA + 6AMLD overlays. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }

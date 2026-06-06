@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+Buy Pro: https://www.csoai.org/checkout
+
 MEOK AP2 Mandate MCP — Google Agent Payments Protocol v0.2.0 bridge
 ======================================================================
 

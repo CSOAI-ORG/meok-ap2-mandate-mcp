@@ -1,4 +1,7 @@
 # Meok Ap2 Mandate MCP
+mcp-name: io.github.CSOAI-ORG/meok-ap2-mandate-mcp
+
+# MEOK Google AP2 Mandate MCP
 
 [![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
 [![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
@@ -118,3 +121,4 @@ Once configured, ask your assistant, for example:
 - "Use `issue_mandate` to …"
 - "Use `verify_mandate` to …"
 - "Use `consume_mandate` to …"
+<!-- BUY-LADDER:END -->
