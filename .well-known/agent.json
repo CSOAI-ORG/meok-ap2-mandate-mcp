@@ -1,0 +1,86 @@
+{
+  "name": "meok-ap2-mandate-mcp",
+  "description": "MEOK Google AP2 Mandate MCP \u2014 issue + verify + revoke signed user-side spend authorisations for",
+  "url": "https://proofof.ai/scorecard/meok-ap2-mandate-mcp.html",
+  "version": "1.0.1",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "issue_mandate",
+      "name": "Issue Mandate",
+      "description": "issue_mandate via meok-ap2-mandate-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "verify_mandate",
+      "name": "Verify Mandate",
+      "description": "verify_mandate via meok-ap2-mandate-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "consume_mandate",
+      "name": "Consume Mandate",
+      "description": "consume_mandate via meok-ap2-mandate-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "revoke_mandate",
+      "name": "Revoke Mandate",
+      "description": "revoke_mandate via meok-ap2-mandate-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_mandate_scopes",
+      "name": "List Mandate Scopes",
+      "description": "list_mandate_scopes via meok-ap2-mandate-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "crosswalk_psd2",
+      "name": "Crosswalk Psd2",
+      "description": "crosswalk_psd2 via meok-ap2-mandate-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "sign_mandate_chain",
+      "name": "Sign Mandate Chain",
+      "description": "sign_mandate_chain via meok-ap2-mandate-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

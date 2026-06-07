@@ -1,0 +1,25 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "meok-ap2-mandate-mcp",
+    "description": "MEOK Google AP2 Mandate MCP \u2014 issue + verify + revoke signed user-side spend authorisations for",
+    "version": "1.0.1",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "meok-ap2-mandate-mcp"
+      }
+    ],
+    "capabilities": [
+      "issue_mandate",
+      "verify_mandate",
+      "consume_mandate",
+      "revoke_mandate",
+      "list_mandate_scopes",
+      "crosswalk_psd2",
+      "sign_mandate_chain"
+    ]
+  }
+}
