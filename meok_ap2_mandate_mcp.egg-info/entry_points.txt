@@ -1,0 +1,2 @@
+[console_scripts]
+meok-ap2-mandate-mcp = server:main
