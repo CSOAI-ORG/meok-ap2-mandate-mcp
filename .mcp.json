@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "meok-ap2-mandate-mcp": {
+      "command": "uvx",
+      "args": [
+        "meok-ap2-mandate-mcp"
+      ]
+    }
+  }
+}
