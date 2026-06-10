@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/meok-ap2-mandate-mcp",
-  "version": "1.0.0",
-  "description": "MEOK Google AP2 Mandate MCP \u2014 issue + verify + revoke signed user-side spend authorisations for",
+  "version": "1.0.1",
+  "description": "MEOK Google AP2 Mandate MCP — issue + verify + revoke signed user-side spend authorisations for",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/meok-ap2-mandate-mcp",
     "source": "github"
@@ -11,7 +11,7 @@
     {
       "registryType": "pypi",
       "identifier": "meok-ap2-mandate-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "runtimeHint": "python",
       "transport": {
         "type": "stdio"
