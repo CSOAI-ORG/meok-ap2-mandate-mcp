@@ -1,0 +1,151 @@
+{
+  "name": "Meok Ap2 Mandate Mcp",
+  "version": "1.0.0",
+  "url": "https://mcp.meok.ai/meok-ap2-mandate-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "MEOK Google AP2 Mandate MCP — issue + verify + revoke signed user-side spend authorisations for agentic commerce. PSD2 SCA crosswalk + MiCA + 6AMLD overlays. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "issue_mandate",
+      "name": "Issue Mandate",
+      "description": "Issue Mandate — a tool of the meok-ap2-mandate-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "verify_mandate",
+      "name": "Verify Mandate",
+      "description": "Verify Mandate — a tool of the meok-ap2-mandate-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "consume_mandate",
+      "name": "Consume Mandate",
+      "description": "Consume Mandate — a tool of the meok-ap2-mandate-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "revoke_mandate",
+      "name": "Revoke Mandate",
+      "description": "Revoke Mandate — a tool of the meok-ap2-mandate-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_mandate_scopes",
+      "name": "List Mandate Scopes",
+      "description": "List Mandate Scopes — a tool of the meok-ap2-mandate-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "crosswalk_psd2",
+      "name": "Crosswalk Psd2",
+      "description": "Crosswalk Psd2 — a tool of the meok-ap2-mandate-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "sign_mandate_chain",
+      "name": "Sign Mandate Chain",
+      "description": "Sign Mandate Chain — a tool of the meok-ap2-mandate-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "meok-ap2-mandate-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}

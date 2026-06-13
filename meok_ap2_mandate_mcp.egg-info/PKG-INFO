@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: meok-ap2-mandate-mcp
-Version: 1.0.1
+Version: 1.0.2
 Summary: MEOK Google AP2 Mandate MCP — issue + verify + revoke signed user-side spend authorisations for agentic commerce. PSD2 SCA crosswalk + MiCA + 6AMLD overlays. By MEOK AI Labs.
 Author-email: Nicholas Templeman <nicholas@meok.ai>
 License: MIT
@@ -109,9 +109,9 @@ MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House 16939677)
 
 | Tier | Price | What you get | Stripe |
 |---|---|---|---|
-| Smoke test | **£1** | Signed sample MCP-Hardening report + Article 50 PDF | <https://buy.stripe.com/dRmcN75ScdQS7oh1Uc8k90U> |
-| Quick Kit | **£9** | EU AI Act Article 50 implementation guide (C2PA + EU-Icon) | <https://buy.stripe.com/cNi00la8s1460ZT0Q88k90V> |
-| Founder Call | **£29** | 30-min 1-on-1 with the founder | <https://buy.stripe.com/8x228ta8s6oqbExaqI8k90W> |
+| Smoke test | **£1** | Signed sample MCP-Hardening report + Article 50 PDF | <https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t> |
+| Quick Kit | **£9** | EU AI Act Article 50 implementation guide (C2PA + EU-Icon) | <https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t> |
+| Founder Call | **£29** | 30-min 1-on-1 with the founder | <https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t> |
 
 > Refundable. UK Stripe — VAT-clean. Builds on the 81-MCP MEOK fleet.
 > Verify any signed report at <https://meok.ai/verify>.
