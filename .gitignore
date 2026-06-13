@@ -6,3 +6,6 @@ __pycache__/.!7660!server.cpython-311.pyc
 dist/meok_ap2_mandate_mcp-1.0.2-py3-none-any.whl
 dist/meok_ap2_mandate_mcp-1.0.2.tar.gz
 pypi-publish-20260609-060323.log
+
+# Auto-added during alignment sweep
+*.pyc
